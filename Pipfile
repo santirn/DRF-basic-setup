@@ -9,6 +9,7 @@ djangorestframework = "*"
 
 [dev-packages]
 colorama = "*"
+coverage = "*"
 
 [requires]
 python_version = "3.10"

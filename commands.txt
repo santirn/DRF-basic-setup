@@ -4,3 +4,9 @@ py manage.py makemigrations
 py manage.py migrate
 
 py manage.py runserver
+
+
+
+
+coverage run manage.py test
+coverage html
