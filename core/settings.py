@@ -24,6 +24,10 @@ SECRET_KEY = 'django-insecure-@i=d5et64k!+^89#@$uisn88c4t6=+!69k@*^=e23n75g+kt=(
 
 #comment
 
+#this is a comment on another branch
+
+
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
