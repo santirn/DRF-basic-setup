@@ -6,10 +6,12 @@ name = "pypi"
 [packages]
 django = "*"
 djangorestframework = "*"
+djangorestframework-simplejwt = "*"
 
 [dev-packages]
 colorama = "*"
 coverage = "*"
+django-cors-headers = "*"
 
 [requires]
 python_version = "3.10"
