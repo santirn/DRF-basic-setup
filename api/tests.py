@@ -13,9 +13,13 @@ class PostTests(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
     
     
-    def create_post(self):
+    def test_create_post(self):
         
-        self.testuser1 = User.objects.create(username = "testuser1", password="testuser1")
+        self.category = Category.objects.create(name='TEST CATEGORY')
+        self.testuser1 = User.objects.create_superuser(username = "testuser1", password="testuser1")
+        
+        self.client.login(username=self.testuser1.username,
+                          password="testuser1")
         
         data =  {
             "tittle": "TESTING TITLE",
@@ -25,5 +29,7 @@ class PostTests(APITestCase):
         }
         
         url = reverse('api:listcreate')
-        response = self.client(url, data, format="json")
+        response = self.client.post(url, data, format="json")
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        
+     
