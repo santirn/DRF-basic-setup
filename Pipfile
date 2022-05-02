@@ -7,11 +7,14 @@ name = "pypi"
 django = "*"
 djangorestframework = "*"
 djangorestframework-simplejwt = "*"
+coreapi = "*"
 
 [dev-packages]
 colorama = "*"
 coverage = "*"
 django-cors-headers = "*"
+pyyaml = "*"
+uritemplate = "*"
 
 [requires]
 python_version = "3.10"

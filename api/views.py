@@ -14,9 +14,6 @@ class PostUserWritePermission(BasePermission):
             return True     
         
         return obj.author == request.user
-
-    
-    
     
 
 
